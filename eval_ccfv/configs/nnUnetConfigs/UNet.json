@@ -1,0 +1,73 @@
+{
+    "layers": ["model.2"],
+    "sample_num": {"model.2": 100},
+    "model": {
+        "name": "UNet",
+        "num_input_channels": 1,
+        "base_num_features": 16,
+        "num_pool": 4,
+        "conv_per_stage": 2,
+        "deep_supervision": false,
+        "dropout_in_localization": false,
+        "num_pool_per_axis": [
+            2,
+            2,
+            2,
+            2
+        ],
+        "pool_op_kernel_sizes": [
+            [
+                2,
+                2,
+                2
+            ],
+            [
+                2,
+                2,
+                2
+            ],
+            [
+                2,
+                2,
+                2
+            ],
+            [
+                2,
+                2,
+                2
+            ]
+        ],
+        "conv_kernel_sizes": [
+            [
+                3,
+                3,
+                3
+            ],
+            [
+                3,
+                3,
+                3
+            ],
+            [
+                3,
+                3,
+                3
+            ],
+            [
+                3,
+                3,
+                3
+            ]
+        ],
+        "max_num_features": 256
+    },
+    "num_classes": 1,
+    "roi_x": 96,
+    "roi_y": 96,
+    "roi_z": 96,
+    "sw_batch_size": 2,
+    "window_mode": "gaussian",
+    "randcrop_sample_size": 2,
+    "rand_bg": false,
+    "infer_overlap": 0.6
+}

@@ -1,0 +1,13 @@
+{
+    "val": [
+        {
+            "data": "/preprocessed/images/image_0.nii.gz",
+            "seg": "/preprocessed/labels/label_0.nii.gz"
+        },
+        {
+            "data": "/preprocessed/images/image_1.nii.gz",
+            "seg": "/preprocessed/labels/label_1.nii.gz"
+        }
+    ],
+    "fold_id": 0
+}
